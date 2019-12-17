@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageViewPhotoGas"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <TextView
+        android:id="@+id/textMarcaGas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Marca de Gas"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhotoGas"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhotoGas" />
+
+    <TextView
+        android:id="@+id/textViewCantidadGas"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Cantidad"
+        app:layout_constraintStart_toStartOf="@+id/textMarcaGas"
+        app:layout_constraintTop_toBottomOf="@+id/textMarcaGas" />
+
+    <EditText
+        android:id="@+id/editTextCantidadGas"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:ems="0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCantidadGas"
+        app:layout_constraintTop_toBottomOf="@+id/textMarcaGas" />
+
+    <TextView
+        android:id="@+id/textViewKiloGas"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Kilos"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCantidadGas"
+        app:layout_constraintStart_toStartOf="@+id/textViewCantidadGas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidadGas" />
+
+    <EditText
+        android:id="@+id/editTextKilloGas"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewKiloGas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCantidadGas" />
+
+    <Button
+        android:id="@+id/buttonConfirmarGas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewKiloGas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKiloGas" />
+
+    <CheckBox
+        android:id="@+id/checkBoxGasPrimium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primium"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhotoGas"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPhotoGas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageViewPhotoCerveza"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/common_full_open_on_phone" />
+
+    <TextView
+        android:id="@+id/textMarcaCerveza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Marca de Cerveza"
+        android:textSize="12sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPhotoCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPhotoCerveza" />
+
+    <TextView
+        android:id="@+id/textViewCantidadCerveza"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Cantidad"
+        app:layout_constraintStart_toStartOf="@+id/textMarcaCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/textMarcaCerveza" />
+
+    <EditText
+        android:id="@+id/editTextCantidadCerveza"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:ems="0"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCantidadCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/textMarcaCerveza" />
+
+    <TextView
+        android:id="@+id/textViewKiloCerveza"
+        android:layout_width="165dp"
+        android:layout_height="49dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Kilos"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCantidadCerveza"
+        app:layout_constraintStart_toStartOf="@+id/textViewCantidadCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCantidadCerveza" />
+
+    <EditText
+        android:id="@+id/editTextKilloCerveza"
+        android:layout_width="245dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewKiloCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/editTextCantidadCerveza" />
+
+    <Button
+        android:id="@+id/buttonConfirmarCerveza"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Confirmar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textViewKiloCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKiloCerveza" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
